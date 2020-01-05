@@ -1,0 +1,52 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.2.RELEASE'
+        springBootManagementVersion = '1.0.8.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("io.spring.gradle:dependency-management-plugin:${springBootManagementVersion}")
+    }
+}
+
+allprojects {
+    group "com.github.rep3.cloud"
+    version "1.0.0"
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'application'
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+    apply plugin: 'war'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    jar {
+        enabled = true
+    }
+    bootJar {
+        classifier = 'boot'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        compile(
+                'org.springframework.boot:spring-boot-starter-web',
+                'org.springframework.boot:spring-boot-starter-tomcat'
+        )
+        testCompile(
+                "org.springframework:spring-test",
+                "junit:junit:4.12"
+        )
+    }
+    dependencyManagement {
+        imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+    }
+}

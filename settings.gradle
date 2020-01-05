@@ -1,0 +1,3 @@
+rootProject.name = 'rep3-cloud'
+include 'auth'
+
