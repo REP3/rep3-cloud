@@ -1,0 +1,17 @@
+spring:
+  profiles: dev
+  application:
+    name: eureka
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
