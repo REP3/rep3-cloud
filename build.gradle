@@ -2,9 +2,13 @@ buildscript {
     ext {
         springBootVersion = '2.2.2.RELEASE'
         springBootManagementVersion = '1.0.8.RELEASE'
+        springCloudVersion = 'Hoxton.SR1'
     }
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         mavenCentral()
+        maven { url 'https://repo.spring.io/snapshot' }
+        maven { url 'https://repo.spring.io/milestone' }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -34,12 +38,20 @@ subprojects {
         classifier = 'boot'
     }
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         mavenCentral()
+        maven { url 'https://repo.spring.io/snapshot' }
+        maven { url 'https://repo.spring.io/milestone' }
     }
     dependencies {
         compile(
                 'org.springframework.boot:spring-boot-starter-web',
-                'org.springframework.boot:spring-boot-starter-tomcat'
+                'org.springframework.boot:spring-boot-starter-tomcat',
+                'org.springframework.cloud:spring-cloud-starter',
+                'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client',
+                'org.springframework.cloud:spring-cloud-starter-config',
+                'com.google.guava:guava:23.0'
+
         )
         testCompile(
                 "org.springframework:spring-test",
@@ -48,5 +60,6 @@ subprojects {
     }
     dependencyManagement {
         imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+        imports { mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}" }
     }
 }
