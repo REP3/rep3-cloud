@@ -1,4 +1,5 @@
 rootProject.name = 'rep3-cloud'
 include 'auth'
 include 'eureka'
+include 'zuul'
 

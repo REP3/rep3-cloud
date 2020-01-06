@@ -1,0 +1,17 @@
+mainClassName = 'com.github.rep3.cloud.zuul.Rep3ZuulApplication'
+springBoot {
+    mainClassName = 'com.github.rep3.cloud.zuul.Rep3ZuulApplication'
+    buildInfo {
+        properties {
+            artifact = 'zuul'
+            version = '1.0.0'
+            group = 'com.github.rep3.cloud'
+            name = 'zuul'
+        }
+    }
+}
+bootJar {
+    classifier = 'boot'
+}
+
+
