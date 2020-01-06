@@ -49,7 +49,6 @@ subprojects {
                 'org.springframework.boot:spring-boot-starter-tomcat',
                 'org.springframework.cloud:spring-cloud-starter',
                 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client',
-                'org.springframework.cloud:spring-cloud-starter-netflix-zuul',
                 'com.google.guava:guava:23.0'
 
         )
