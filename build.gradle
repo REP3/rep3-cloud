@@ -48,6 +48,7 @@ subprojects {
                 'org.springframework.boot:spring-boot-starter-web',
                 'org.springframework.boot:spring-boot-starter-tomcat',
                 'org.springframework.boot:spring-boot-starter-actuator',
+                'org.springframework.cloud:spring-cloud-starter-hystrix:1.4.7.RELEASE',
                 'org.springframework.cloud:spring-cloud-starter',
                 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client',
                 'com.google.guava:guava:23.0'
