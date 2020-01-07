@@ -1,15 +1,17 @@
 spring:
-  profiles: dev
+  profiles: peer1
   application:
     name: eureka
 server:
   port: 8000
 eureka:
   instance:
-    hostname: localhost
+    hostname: peer1
   client:
-    fetch-registry: false
-    register-with-eureka: false
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka
 management:
   endpoints:
     web:
