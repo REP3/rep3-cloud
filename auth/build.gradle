@@ -13,4 +13,3 @@ springBoot {
 bootJar {
     classifier = 'boot'
 }
-
