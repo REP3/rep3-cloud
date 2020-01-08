@@ -11,7 +11,4 @@ springBoot {
         }
     }
 }
-bootJar {
-    classifier = 'boot'
-}
 

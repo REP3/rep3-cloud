@@ -10,10 +10,6 @@ springBoot {
         }
     }
 }
-bootJar {
-    classifier = 'boot'
-}
-
 dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-turbine:1.4.7.RELEASE'
 }
