@@ -1,3 +1,4 @@
+//http://localhost:8007/turbine.stream
 mainClassName = 'com.github.rep3.cloud.ribbon.Rep3RibbonApplication'
 springBoot {
     mainClassName = 'com.github.rep3.cloud.ribbon.Rep3RibbonApplication'

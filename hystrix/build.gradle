@@ -1,6 +1,6 @@
 mainClassName = 'com.github.rep3.cloud.hystrix.Rep3HystrixApplication'
 springBoot {
-    mainClassName = 'com.github.rep3.cloud.auth.Rep3HystrixApplication'
+    mainClassName = 'com.github.rep3.cloud.hystrix.Rep3HystrixApplication'
     buildInfo {
         properties {
             artifact = 'hystrix'
@@ -16,4 +16,5 @@ bootJar {
 
 dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.4.7.RELEASE'
+    compile 'org.springframework.cloud:spring-cloud-starter-turbine:1.4.7.RELEASE'
 }

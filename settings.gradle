@@ -5,4 +5,5 @@ include 'zuul'
 include 'ribbon'
 include 'hystrix'
 include 'common'
+include 'turbine'
 
