@@ -16,5 +16,5 @@ management:
     port: 8008
 turbine:
   app-config: auth,eureka,ribbon,hystrix,turbine,zuul
-  cluster-name-expression: "default"
+  cluster-name-expression: new String('default')
   combine-host-port: true
