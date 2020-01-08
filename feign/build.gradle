@@ -1,0 +1,15 @@
+mainClassName = 'com.github.rep3.cloud.feign.Rep3FeignApplication'
+springBoot {
+    mainClassName = 'com.github.rep3.cloud.feign.Rep3FeignApplication'
+    buildInfo {
+        properties {
+            artifact = 'feign'
+            version = '1.0.0'
+            group = 'com.github.rep3.cloud'
+            name = 'feign'
+        }
+    }
+}
+bootJar {
+    classifier = 'boot'
+}

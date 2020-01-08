@@ -4,6 +4,6 @@ include 'eureka'
 include 'zuul'
 include 'ribbon'
 include 'hystrix'
-include 'common'
 include 'turbine'
+include 'feign'
 
