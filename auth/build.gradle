@@ -10,3 +10,7 @@ springBoot {
         }
     }
 }
+
+dependencies {
+    compile project(":common")
+}

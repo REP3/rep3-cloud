@@ -1,6 +1,8 @@
 spring:
   application:
     name: hystrix
+  main:
+    allow-bean-definition-overriding: true
 server:
   port: 8006
 eureka:

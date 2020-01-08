@@ -13,4 +13,5 @@ springBoot {
 dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.4.7.RELEASE'
     compile 'org.springframework.cloud:spring-cloud-starter-turbine:1.4.7.RELEASE'
+    compile project(":common")
 }
