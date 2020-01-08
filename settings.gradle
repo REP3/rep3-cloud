@@ -3,4 +3,5 @@ include 'auth'
 include 'eureka'
 include 'zuul'
 include 'ribbon'
+include 'hystrix'
 
