@@ -15,16 +15,19 @@ public class SwaggerDocsConfig implements SwaggerResourcesProvider {
     @Override
     public List<SwaggerResource> get() {
         List<SwaggerResource> resources = new ArrayList();
+
         SwaggerResource auth = new SwaggerResource();
         auth.setName("auth");
-        auth.setSwaggerVersion("2.0");
         auth.setUrl("/auth/v2/api-docs");
+        auth.setSwaggerVersion("2.0");
         resources.add(auth);
+
         SwaggerResource hystrix = new SwaggerResource();
         hystrix.setName("hystrix");
-        hystrix.setSwaggerVersion("2.0");
         hystrix.setUrl("/hystrix/v2/api-docs");
+        hystrix.setSwaggerVersion("2.0");
         resources.add(hystrix);
+
         return resources;
     }
 

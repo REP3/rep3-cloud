@@ -30,7 +30,7 @@ public class AuthFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         Object accessToken = request.getParameter("accessToken");
-        if (null == accessToken && !request.getRequestURI().contains("docs")) {
+        if (null == accessToken && !request.getRequestURI().contains("docs") && !request.getRequestURI().contains("swagger")) {
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
         }
