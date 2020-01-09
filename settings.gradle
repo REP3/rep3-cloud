@@ -6,5 +6,4 @@ include 'ribbon'
 include 'hystrix'
 include 'turbine'
 include 'common'
-include 'config'
 

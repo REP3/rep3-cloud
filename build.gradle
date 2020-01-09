@@ -52,7 +52,6 @@ subprojects {
                 'org.springframework.cloud:spring-cloud-starter-hystrix:1.4.7.RELEASE',
                 'org.springframework.cloud:spring-cloud-starter-feign:1.4.7.RELEASE',
                 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client',
-                "org.springframework.cloud:spring-cloud-starter-config",
                 'com.google.guava:guava:23.0',
                 "io.springfox:springfox-swagger2:2.9.2",
                 "io.springfox:springfox-swagger-ui:2.9.2"

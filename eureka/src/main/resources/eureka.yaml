@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: eureka
+server:
+  port: 8000
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      cors:
+        allowed-origins: '*'
+    jmx:
+      exposure:
+        include: '*'
+
