@@ -1,0 +1,16 @@
+mainClassName = 'com.github.rep3.cloud.bus.Rep3BusApplication'
+springBoot {
+    mainClassName = 'com.github.rep3.cloud.bus.Rep3BusApplication'
+    buildInfo {
+        properties {
+            artifact = 'bus'
+            version = '1.0.0'
+            group = 'com.github.rep3.cloud'
+            name = 'bus'
+        }
+    }
+}
+
+dependencies {
+    compile project(":common")
+}

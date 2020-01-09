@@ -1,0 +1,16 @@
+mainClassName = 'com.github.rep3.cloud.sleuth.Rep3SleuthApplication'
+springBoot {
+    mainClassName = 'com.github.rep3.cloud.sleuth.Rep3SleuthApplication'
+    buildInfo {
+        properties {
+            artifact = 'sleuth'
+            version = '1.0.0'
+            group = 'com.github.rep3.cloud'
+            name = 'sleuth'
+        }
+    }
+}
+
+dependencies {
+    compile project(":common")
+}

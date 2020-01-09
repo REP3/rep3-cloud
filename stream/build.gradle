@@ -1,0 +1,16 @@
+mainClassName = 'com.github.rep3.cloud.stream.Rep3StreamApplication'
+springBoot {
+    mainClassName = 'com.github.rep3.cloud.stream.Rep3StreamApplication'
+    buildInfo {
+        properties {
+            artifact = 'stream'
+            version = '1.0.0'
+            group = 'com.github.rep3.cloud'
+            name = 'stream'
+        }
+    }
+}
+
+dependencies {
+    compile project(":common")
+}

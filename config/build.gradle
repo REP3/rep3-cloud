@@ -1,0 +1,16 @@
+mainClassName = 'com.github.rep3.cloud.config.Rep3ConfigApplication'
+springBoot {
+    mainClassName = 'com.github.rep3.cloud.config.Rep3ConfigApplication'
+    buildInfo {
+        properties {
+            artifact = 'config'
+            version = '1.0.0'
+            group = 'com.github.rep3.cloud'
+            name = 'config'
+        }
+    }
+}
+
+dependencies {
+    compile project(":common")
+}

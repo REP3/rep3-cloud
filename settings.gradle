@@ -6,4 +6,8 @@ include 'ribbon'
 include 'hystrix'
 include 'turbine'
 include 'common'
+include 'config'
+include 'bus'
+include 'stream'
+include 'sleuth'
 

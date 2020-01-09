@@ -1,6 +1,5 @@
 package com.github.rep3.cloud.hystrix.entity;
 
-import lombok.*;
 
 import java.util.Objects;
 

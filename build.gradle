@@ -49,6 +49,7 @@ subprojects {
                 'org.springframework.boot:spring-boot-starter-tomcat',
                 'org.springframework.boot:spring-boot-starter-actuator',
                 'org.springframework.cloud:spring-cloud-starter',
+                'org.springframework.cloud:spring-cloud-starter-config',
                 'org.springframework.cloud:spring-cloud-starter-hystrix:1.4.7.RELEASE',
                 'org.springframework.cloud:spring-cloud-starter-feign:1.4.7.RELEASE',
                 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client',

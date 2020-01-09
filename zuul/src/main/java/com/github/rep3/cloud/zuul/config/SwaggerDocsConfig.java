@@ -1,6 +1,5 @@
 package com.github.rep3.cloud.zuul.config;
 
-
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import springfox.documentation.swagger.web.SwaggerResource;
@@ -14,7 +13,7 @@ import java.util.List;
 public class SwaggerDocsConfig implements SwaggerResourcesProvider {
     @Override
     public List<SwaggerResource> get() {
-        List<SwaggerResource> resources = new ArrayList();
+        List<SwaggerResource> resources = new ArrayList<SwaggerResource>();
 
         SwaggerResource auth = new SwaggerResource();
         auth.setName("auth");
@@ -31,12 +30,4 @@ public class SwaggerDocsConfig implements SwaggerResourcesProvider {
         return resources;
     }
 
-
-    private SwaggerResource swaggerResource(String name, String location, String version) {
-        SwaggerResource swaggerResource = new SwaggerResource();
-        swaggerResource.setName(name);
-        swaggerResource.setLocation(location);
-        swaggerResource.setSwaggerVersion(version);
-        return swaggerResource;
-    }
 }
