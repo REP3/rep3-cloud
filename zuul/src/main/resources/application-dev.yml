@@ -13,3 +13,9 @@ management:
     web:
       exposure:
         include: '*'
+      cors:
+        allowed-origins: '*'
+    jmx:
+      exposure:
+        include: '*'
+

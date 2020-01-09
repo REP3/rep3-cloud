@@ -3,7 +3,6 @@ package com.github.rep3.cloud.zuul.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
-import org.springframework.context.annotation.Bean;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -30,7 +29,11 @@ public class AuthFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         Object accessToken = request.getParameter("accessToken");
-        if (null == accessToken && !request.getRequestURI().contains("docs") && !request.getRequestURI().contains("swagger")) {
+        if (null == accessToken
+                && !request.getRequestURI().contains("docs")
+                && !request.getRequestURI().contains("swagger")
+                && !request.getRequestURI().contains("/hystrix.stream")
+        ) {
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
         }
