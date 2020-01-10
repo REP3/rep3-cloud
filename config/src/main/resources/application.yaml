@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/REP3/rep3-cloud.git
+          search-paths:
+          - aconfigs
+  application:
+    name: config
+server:
+  port: 8001
+
