@@ -45,10 +45,13 @@ subprojects {
     }
     dependencies {
         compile(
+                'org.springframework.retry:spring-retry',
                 'org.springframework.boot:spring-boot-starter-web',
                 'org.springframework.boot:spring-boot-starter-tomcat',
                 'org.springframework.boot:spring-boot-starter-actuator',
+                'org.springframework.boot:spring-boot-starter-aop',
                 'org.springframework.cloud:spring-cloud-starter',
+                // 'org.springframework.cloud:spring-cloud-starter-security',
                 'org.springframework.cloud:spring-cloud-starter-config',
                 'org.springframework.cloud:spring-cloud-starter-hystrix:1.4.7.RELEASE',
                 'org.springframework.cloud:spring-cloud-starter-feign:1.4.7.RELEASE',
