@@ -47,6 +47,8 @@ subprojects {
         compile(
                 'org.springframework.retry:spring-retry',
                 'org.springframework.boot:spring-boot-starter-web',
+                'org.springframework.boot:spring-boot-starter-test',
+                'org.springframework.boot:spring-boot-starter-amqp',
                 'org.springframework.boot:spring-boot-starter-tomcat',
                 'org.springframework.boot:spring-boot-starter-actuator',
                 'org.springframework.boot:spring-boot-starter-aop',
